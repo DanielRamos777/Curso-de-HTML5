@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Validacon</h1>
+    <form action="">
+        <input type="text" required
+        maxlength="15"
+        minlength="5"
+        pattern="[A-Za-z]+"
+        >
+
+        <input type="number" required
+        maxlength="20"
+        min="5">
+
+
+        <input type="submit" value="enviar">
+    </form>
+
+
+    <h1>Formularios</h1>
+
+    <form>
+        <fieldset>
+            <legend>Informacon personal</legend>
+
+            <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" placeholder="Nombre....">
+            </div>
+
+            <div>
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="" id="Descripcion" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="Email...">
+            </div>
+
+            <div>
+                <Label for="Contraseña">Contraseña:</Label>
+                <input type="password">
+            </div>
+
+            <div>
+                <label for="radio">Radio:</label>
+
+                <input type="radio" name="genero" id="hombre" value="Hombre">
+                <label for="Hombre">Hombre</label>
+
+                <input type="radio" name="genero" id="mujer" value="Mujer">
+                <label for="Mujer">Mujer</label>
+            </div>
+
+            <div>
+                Select
+                <select>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Otro">Otro </option>
+                </select>
+            </div>
+
+            <div>
+                Checkbox:
+                <label>
+                    Mayor de edad
+                </label>
+                <input type="checkbox">
+
+                <label>
+                    Menor de edad
+                </label>
+                <input type="checkbox">
+            </div>
+
+            <div>
+                <label for="Color">Color:</label>
+                <input type="color">
+            </div>
+
+            <div>
+                <label for="fecha">Fecha:</label>
+                <input type="date">
+            </div>
+
+            <div>
+                <label for="Ficheros"></label>
+                <input type="file">
+            </div>
+
+            <div>
+                <label for="imageneds">Imagen: </label>
+                <input type="image" width="50px" src="./img/6040a423226345f48ceaad879e7dc6f1.jpg">
+            </div>
+
+            <div>
+                <label for="oculto">Oculto</label>
+                <input type="hidden" name="oculto" value="ocultar 231123231231">
+            </div>
+
+            <div>
+                <label for="Numero">Numero:</label>
+                <input type="number">
+            </div>
+
+            <div>
+                <label for="Rango">Rango:</label>
+                <input type="range" name="Rango">
+            </div>
+
+            <div>
+                <label for="busqueda">Busqueda:</label>
+                <input type="search">
+                <button>Buscar</button>
+            </div>
+
+            <div>
+                <label for="telefono">Telefono:</label>
+                <input type="tel" name="Telefono">
+            </div>
+
+            <div>
+                <label for="Tienpo">Tiempo:</label>
+                <input type="time" name="Tienpo">
+            </div>
+
+            <div>
+                <label for="Sitio Wed">Sitio Wed:</label>
+                <input type="url">
+            </div>
+
+            <div>
+                <label for="Barra de progreso">Barar de progreso:</label>
+                <progress value="45" max="100"></progress>
+            </div>
+            
+            <div>
+                <label for="Meter">Meter</label>
+                <meter max="100" value="45"></meter>
+            </div>
+
+            <div>
+                <label for="lista de datos">Lista de datos</label>
+                <input list="frutas" name="fruta">
+                <datalist id="frutas">
+                    <option value="Manzana"/>
+                    <option value="Naranja"/>
+                    <option value="Uva"/>
+                    <option value="Cereza"/>
+                    <option value="Sandilla"/>
+                    <option value="Pera"/>
+                </datalist>
+            </div>
+        </fieldset>
+
+        
+        <input type="submit" value="Enviar Formulario">
+        <!-- <button type="submit">Enviar</button> -->
+        <!-- <input type="submit" value="Enviar"> -->
+
+        <input type="reset" value="Limpiar Formulario">
+    </form>
+
+</body>
+</html>
